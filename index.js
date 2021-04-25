@@ -22,7 +22,7 @@ app.post('/users', db.createUser)
 app.put('/users/:id', db.updateUser)
 app.delete('/users/:id', db.deleteUser)
 
-app.listen(process.emitWarning.PORT || 3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`App is listening.`)
 })
 
